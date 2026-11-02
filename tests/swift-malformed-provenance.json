@@ -1,0 +1,8 @@
+{
+  "revision": "c54c94dedb6a82e138135a2cf5d84a07cc7d3b29",
+  "cases": 297,
+  "sha256": "da908f0f5fe6a178ecf5a29d9c4a31be2de7ed63fc4a69626eeb9819da79f404",
+  "sources": {
+    "Sources/Multikey/Multikey.swift": "21bdbd798dd84ee5755d65477ce372a6f3b69ac03d5dc9a0c9c67b44dd3bfd41"
+  }
+}

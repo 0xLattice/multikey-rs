@@ -1,0 +1,1190 @@
+[
+  {
+    "input": "",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "e",
+    "result": "error:invalidEncoding"
+  },
+  {
+    "input": "zz",
+    "result": "error:invalidEncoding"
+  },
+  {
+    "input": "é",
+    "result": "error:invalidEncoding"
+  },
+  {
+    "input": "0Xed01",
+    "result": "error:invalidEncoding"
+  },
+  {
+    "input": " ed01",
+    "result": "error:invalidEncoding"
+  },
+  {
+    "input": "ed01\n",
+    "result": "error:invalidEncoding"
+  },
+  {
+    "input": "0xed01",
+    "result": "ed01"
+  },
+  {
+    "input": "ED01",
+    "result": "ed01"
+  },
+  {
+    "input": "ed+1",
+    "result": "ed01"
+  },
+  {
+    "input": "ed-0",
+    "result": "error:unknownKeyType(109)"
+  },
+  {
+    "input": "ed01+1",
+    "result": "ed0101"
+  },
+  {
+    "input": "ed01-0",
+    "result": "ed0100"
+  },
+  {
+    "input": "ed01-1",
+    "result": "error:invalidEncoding"
+  },
+  {
+    "input": "ed01éé",
+    "result": "error:invalidEncoding"
+  },
+  {
+    "input": "ed01１２",
+    "result": "error:invalidEncoding"
+  },
+  {
+    "input": "ed01١٢",
+    "result": "error:invalidEncoding"
+  },
+  {
+    "input": "ed818080808080808000",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808001",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808002",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808003",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808004",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808005",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808006",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808007",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808008",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808009",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080800a",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080800b",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080800c",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080800d",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080800e",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080800f",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808010",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808011",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808012",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808013",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808014",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808015",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808016",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808017",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808018",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808019",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080801a",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080801b",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080801c",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080801d",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080801e",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080801f",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808020",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808021",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808022",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808023",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808024",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808025",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808026",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808027",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808028",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808029",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080802a",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080802b",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080802c",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080802d",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080802e",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080802f",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808030",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808031",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808032",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808033",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808034",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808035",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808036",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808037",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808038",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808039",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080803a",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080803b",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080803c",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080803d",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080803e",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080803f",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808040",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808041",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808042",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808043",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808044",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808045",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808046",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808047",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808048",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808049",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080804a",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080804b",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080804c",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080804d",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080804e",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080804f",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808050",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808051",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808052",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808053",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808054",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808055",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808056",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808057",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808058",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808059",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080805a",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080805b",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080805c",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080805d",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080805e",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080805f",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808060",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808061",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808062",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808063",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808064",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808065",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808066",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808067",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808068",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808069",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080806a",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080806b",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080806c",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080806d",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080806e",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080806f",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808070",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808071",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808072",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808073",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808074",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808075",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808076",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808077",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808078",
+    "result": "ed01"
+  },
+  {
+    "input": "ed818080808080808079",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080807a",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080807b",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080807c",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080807d",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed81808080808080807e",
+    "result": "ed01"
+  },
+  {
+    "input": "ed81808080808080807f",
+    "result": "error:unknownKeyType(9223372036854776045)"
+  },
+  {
+    "input": "ed818080808080808080",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808081",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808082",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808083",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808084",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808085",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808086",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808087",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808088",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808089",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed81808080808080808a",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed81808080808080808b",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed81808080808080808c",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed81808080808080808d",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed81808080808080808e",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed81808080808080808f",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808090",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808091",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808092",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808093",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808094",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808095",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808096",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808097",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808098",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed818080808080808099",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed81808080808080809a",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed81808080808080809b",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed81808080808080809c",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed81808080808080809d",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed81808080808080809e",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed81808080808080809f",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080a0",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080a1",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080a2",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080a3",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080a4",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080a5",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080a6",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080a7",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080a8",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080a9",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080aa",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080ab",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080ac",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080ad",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080ae",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080af",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080b0",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080b1",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080b2",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080b3",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080b4",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080b5",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080b6",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080b7",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080b8",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080b9",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080ba",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080bb",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080bc",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080bd",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080be",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080bf",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080c0",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080c1",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080c2",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080c3",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080c4",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080c5",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080c6",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080c7",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080c8",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080c9",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080ca",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080cb",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080cc",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080cd",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080ce",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080cf",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080d0",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080d1",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080d2",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080d3",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080d4",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080d5",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080d6",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080d7",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080d8",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080d9",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080da",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080db",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080dc",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080dd",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080de",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080df",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080e0",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080e1",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080e2",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080e3",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080e4",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080e5",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080e6",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080e7",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080e8",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080e9",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080ea",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080eb",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080ec",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080ed",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080ee",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080ef",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080f0",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080f1",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080f2",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080f3",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080f4",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080f5",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080f6",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080f7",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080f8",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080f9",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080fa",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080fb",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080fc",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080fd",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080fe",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8180808080808080ff",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "80",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8000",
+    "result": "error:unknownKeyType(109)"
+  },
+  {
+    "input": "8080",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed808000",
+    "result": "error:unknownKeyType(109)"
+  },
+  {
+    "input": "808080",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed80808000",
+    "result": "error:unknownKeyType(109)"
+  },
+  {
+    "input": "80808080",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8080808000",
+    "result": "error:unknownKeyType(109)"
+  },
+  {
+    "input": "8080808080",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed808080808000",
+    "result": "error:unknownKeyType(109)"
+  },
+  {
+    "input": "808080808080",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed80808080808000",
+    "result": "error:unknownKeyType(109)"
+  },
+  {
+    "input": "80808080808080",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8080808080808000",
+    "result": "error:unknownKeyType(109)"
+  },
+  {
+    "input": "8080808080808080",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed808080808080808000",
+    "result": "error:unknownKeyType(109)"
+  },
+  {
+    "input": "808080808080808080",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed80808080808080808000",
+    "result": "error:varintOverflow"
+  },
+  {
+    "input": "80808080808080808080",
+    "result": "error:varintTruncated"
+  },
+  {
+    "input": "ed8080808080808080808000",
+    "result": "error:varintOverflow"
+  },
+  {
+    "input": "8080808080808080808080",
+    "result": "error:varintOverflow"
+  },
+  {
+    "input": "ed808080808080808080808000",
+    "result": "error:varintOverflow"
+  },
+  {
+    "input": "808080808080808080808080",
+    "result": "error:varintOverflow"
+  },
+  {
+    "input": "ed80808080808080808080808000",
+    "result": "error:varintOverflow"
+  }
+]
